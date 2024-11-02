@@ -1,0 +1,6 @@
+<!-- src/app/app.component.html -->
+
+<div class="container">
+    <app-profile-form (profileAdded)="onProfileAdded($event)"></app-profile-form>
+    <app-profile-list [profiles]="profiles"></app-profile-list>
+</div>

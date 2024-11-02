@@ -1,0 +1,21 @@
+.profile-list {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.profile-card {
+    background-color: var(--white);
+    border-left: 5px solid var(--primary-color);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* src/app/profile-list/profile-list.component.css */
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+

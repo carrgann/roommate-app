@@ -1,0 +1,35 @@
+<!-- src/app/profile-list/profile-list.component.html -->
+
+<div class="profile-list">
+    <h2>Potential Matches</h2>
+
+    <!-- Filter Options -->
+    <div class="filter-options">
+        <select [(ngModel)]="filter.sex">
+            <option value="">All Genders</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <select [(ngModel)]="filter.year">
+            <option value="">All Years</option>
+            <option value="Freshman">Freshman</option>
+            <option value="Sophomore">Sophomore</option>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+            <option value="Masters">Masters</option>
+            <option value="PhD">PhD</option>
+        </select>
+    </div>
+
+    <!-- Display Filtered Profiles -->
+    <div *ngFor="let profile of filteredProfiles()" class="profile-card">
+        <p>Name: {{ profile.name }}</p>
+        <p>Sex: {{ profile.sex }}</p>
+        <p>Year: {{ profile.year }}</p>
+        <p>Cleanliness: {{ profile.cleanliness }}</p>
+        <p>Sleep Schedule: {{ profile.sleepSchedule }}</p>
+        <p>Lifestyle: {{ profile.lifestyle }}</p>
+    </div>
+</div>

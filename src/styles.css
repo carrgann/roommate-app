@@ -1,0 +1,32 @@
+/* src/styles.css */
+
+:root {
+    --primary-color: #4B9CD3;    /* Carolina Blue */
+    --secondary-color: #13294B;  /* Navy Blue */
+    --tertiary-color: #D3D3D3;   /* Soft Grey */
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--tertiary-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: var(--secondary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}

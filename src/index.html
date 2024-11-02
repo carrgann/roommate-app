@@ -1,0 +1,25 @@
+<!-- src/app/profile-form/profile-form.component.html -->
+
+<div class="form-container">
+    <h2>Add Your Profile</h2>
+    <form (ngSubmit)="addProfile()">
+        <input type="text" [(ngModel)]="profile.name" name="name" placeholder="Name" required>
+        <select [(ngModel)]="profile.cleanliness" name="cleanliness" required>
+            <option value="">Cleanliness</option>
+            <option value="Very clean">Very clean</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Relaxed">Relaxed</option>
+        </select>
+        <select [(ngModel)]="profile.sleepSchedule" name="sleepSchedule" required>
+            <option value="">Sleep Schedule</option>
+            <option value="Early riser">Early riser</option>
+            <option value="Night owl">Night owl</option>
+        </select>
+        <select [(ngModel)]="profile.lifestyle" name="lifestyle" required>
+            <option value="">Lifestyle</option>
+            <option value="Quiet">Quiet</option>
+            <option value="Social">Social</option>
+        </select>
+        <button type="submit">Add Profile</button>
+    </form>
+</div>
